@@ -1,0 +1,232 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+* {
+    box-sizing: border-box;
+   
+}
+body{
+    margin: 0px;
+}
+
+header #titulo {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+header h1 {
+    display: inline;
+    flex: 1 1 100%;
+}
+
+header img {
+    width: 80px;
+    vertical-align: middle;
+}
+
+header nav {
+    margin-bottom:12px;
+    text-align: center;
+    flex: 1 1 100%;   
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header nav li {
+    padding: 10px 20px;
+}
+
+header nav ul li a {
+    
+    color:black;
+    text-decoration: none;
+    font-size: 18px; 
+    
+}
+
+header > nav > ul > li:nth-child(1), header > nav > ul > li:nth-child(2){
+    border-right: 2px solid gray;
+}
+
+
+header nav ul li:hover{
+    
+    background-color: #fdfff780;
+    transition: 0.9s;
+
+}
+
+
+#inicio > img{
+    padding-top: -15px;
+    width: 100%;
+    height: 500px;
+    
+
+}
+
+.calender{
+    position: relative;
+    background: #fff;
+    width: 800px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 15px solid #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 5);
+
+}
+
+.calender .date{
+    width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.calender .date h3{
+    margin: 0 0 20px;
+    padding: 0;
+    font-weight: 500;
+    text-align: center;
+}
+.calender .date .days{
+    display: flex;
+    flex-wrap: wrap;
+}
+.calender .date .days .day,
+.calender .date .days .number{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calender .date .days .day:first-child,
+.calender .date .days .number:nth-child(7n+1)
+{
+    color: #f44336;
+    font-weight: 600;
+    
+
+}
+
+.calender .date .days .number.active{
+    background: #352b48;
+    color: red;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+.calender .image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background: #000;
+}
+
+.calender .image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+main{
+    
+    margin: auto;
+    left: 480px;
+    cursor: pointer;
+
+}
+
+h1{
+    text-align: center;
+}
+
+.Festivales{
+    flex: 1 1 100%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+}
+.eventos{
+ 
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text{
+    position: absolute;
+    width: 320px;
+    z-index: 1;
+    text-align: center;
+    color: rgb(24, 23, 23);
+    top: 290px
+}
+
+h2{
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    text-align:bottom;
+    top: -25px ;
+    
+}
+
+.eventos > img{
+    position: relative;
+    top: -45px;
+}
+
+h4{
+    text-align: center;
+    font-size: 40px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer > p{
+    margin: 2px;
+}
+
+h5{
+    margin: -20px;
+}
+
+@media (max-width: 768px) {
+  
+#titulo h1{
+
+font-size: 10px;
+}
+
+}

@@ -1,0 +1,171 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+* {
+    box-sizing: border-box;
+   
+}
+body{
+    margin: 0px;
+}
+
+header #titulo {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+header h1 {
+    display: inline;
+    flex: 1 1 100%;
+}
+
+header img {
+    width: 80px;
+    vertical-align: middle;
+}
+
+header nav {
+    margin-bottom:12px;
+    text-align: center;
+    flex: 1 1 100%;   
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header nav li {
+    padding: 10px 20px;
+}
+
+header nav ul li a {
+    
+    color:black;
+    text-decoration: none;
+    font-size: 18px; 
+    
+}
+
+header > nav > ul > li:nth-child(1), header > nav > ul > li:nth-child(2){
+    border-right: 2px solid gray;
+}
+
+
+header nav ul li:hover{
+    
+    background-color: #fdfff780;
+    transition: 0.9s;
+
+}
+
+
+#inicio > img{
+    padding-top: -15px;
+    width: 100%;
+    height: 500px;
+    
+
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+main{
+    background-color: #f0efee;
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+main > h4{
+    flex: 1 1 100%;
+    font-size: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 0px;
+}
+main > h4 > span{
+    color: #02cfb4;
+}
+.imgcabecera{
+    flex: 1 1 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.imgtitulo{
+    background-color: white;
+    box-shadow: 1px 2px 2px black;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.imgtitulo > img{
+    width: 500px;
+    height: 550px;
+    align-self: center;
+}
+.imgtitulo> div > h4{
+    margin-bottom: 0px;
+    color: #02cfb4;
+    font-weight: bolder;
+}
+.imgtitulo > div > a{
+    text-decoration: none;
+    color: black;
+}
+.imgtitulo> div > a >  h3, .imgtitulo > div > p{
+    margin: 0px;
+}
+
+video{
+    
+    text-align: center;
+    
+}
+
+footer{
+    text-align: center;
+}
+
+footer > p{
+    margin: 2px;
+}
+
+h5{
+    margin: -20px;
+}
+
+.fotosan{
+    text-align: center;
+    
+}
+
+#imgtitulo p{
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  
+    #titulo h1{
+    
+    font-size: 10px;
+    }
+    
+    }
